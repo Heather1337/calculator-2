@@ -13,15 +13,20 @@ while True:
     result = None
 
     operator = tokens[0]
+    if operator == "q":
+    break
+
+    if len(tokens) < 2:
+        print('Invalid entry, please try again.')
     num1 = float(tokens[1])
 
-    if len(tokens) > 2:
+    elif len(tokens) > 2:
         num2 = float(tokens[2])
+    
 
     
 # Create conditional statements to compare users input to our tokens
-    if operator == "q":
-        break
+
     
     elif operator == "+":
         result = add(num1, num2)
