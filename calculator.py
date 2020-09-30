@@ -28,6 +28,24 @@ while True:
 
     elif operator == "-":
         result = subtract(num1, num2)
+
+    elif operator == "*":
+        result = multiply(num1, num2)
+
+    elif operator == "/":
+        result = divide(num1, num2)
+
+    elif operator == "square":
+        result = square(num1)
+
+    elif operator == "cube":
+        result = cube(num1)
+
+    elif operator == "power":
+        result = power(num1, num2)
+
+    elif operator == "mod":
+        result = mod(num1, num2)
     
     print(result)
 # Based on the users input we will call the necessary functions
