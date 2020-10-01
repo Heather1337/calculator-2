@@ -4,10 +4,9 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
                         power, mod, )
 
 
-# Create a function that takes in a users input and returns an float 
-# Create a loop 
+# Create a repl 
 while True:
-# Tokenize a string
+    # Tokenize a string
     input_string = input("Enter your equation: ")
     tokens = input_string.split(' ')
     result = None
@@ -25,6 +24,7 @@ while True:
     if not num1.isdigit():
         print("Please provide a number")    
     num2 = 0   
+
     #Checking if input is 3 or more 
     if len(tokens) > 2:
         num2 = tokens[2]
@@ -32,10 +32,7 @@ while True:
         print("Please provide a number")
 
 
-
-# Create conditional statements to compare users input to our tokens
-
-    
+    # Create conditional statements to compare users input to our tokens
     elif operator == "+":
         result = add(float(num1), float(num2))
 
@@ -61,9 +58,3 @@ while True:
         result = mod(float(num1), float(num2))
     
     print(result)
-   
-# Based on the users input we will call the necessary functions
-# Print the end result 
-
-
-
